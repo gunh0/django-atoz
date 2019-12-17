@@ -11,3 +11,8 @@ class Bookmark(models.Model):
     
     def __str__(self):  # 객체를 문자열로 표현할 때 사용하는 함수
         return self.title
+
+    '''
+    def __str__(self):  # 객체를 문자열로 표현할 때 사용하는 함수
+        return "%s %s" %(self.title, self.url)
+    '''
