@@ -1,11 +1,18 @@
-### 1st Result
+```powershell
+> pip install virtualenv
+> virtualenv venv		// virtualenv 'name'
+> .\venv\Scripts\activate.ps1
+> deactivate
+```
 
-![image](https://user-images.githubusercontent.com/41619898/73704775-7d595000-4737-11ea-8906-b20a350eb6d4.png)
+```shell
+$ find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+$ find . -path "*/migrations/*.pyc" -delete
 
+python manage.py makemigrations
+python manage.py migrate
+python .\manage.py createsuperuser
 
+python manage.py runserver
+```
 
----
-
-
-
-### 2nd Result
