@@ -92,3 +92,23 @@ Nginx는 Thread를 늘리는 방식이라, Nginx가 보다 더 많이 사용되�
 
 - 개발 과정에서 작성된 코드를 실행하고 테스트하는 테스트용 웹 서버이다.
 
+----
+
+### Basic Running Command / Reset Migrations
+
+```shell
+> pip install virtualenv
+> virtualenv venv		// virtualenv 'name'
+> .\venv\Scripts\activate.ps1
+> deactivate			// virtualenv exit
+
+$ find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+$ find . -path "*/migrations/*.pyc" -delete
+
+> python manage.py makemigrations
+> python manage.py migrate
+> python .\manage.py createsuperuser
+
+> python manage.py runserver
+```
+
