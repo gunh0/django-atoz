@@ -1,2 +1,0 @@
-### Bookmark App / Blog App
-
