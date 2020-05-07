@@ -67,9 +67,9 @@ MVT(Model-View-Template)는 MVC와 약간 다르다.
 >
 >   > ###### Migrations (마이그레이션)
 >   >
->   > ​	테이블 및 필드의 생성, 삭제, 변경 등과 같이 데이터베이스에 대한 변경 사항을 알려주는 정보
+>   > - 테이블 및 필드의 생성, 삭제, 변경 등과 같이 데이터베이스에 대한 변경 사항을 알려주는 정보
 >   >
->   > ​	물리적으로는 애플리케이션 디렉터리별로 migrations/ 디렉터리 하위에 마이그레이션 파일들이 존재
+>   > - 물리적으로는 애플리케이션 디렉터리별로 migrations/ 디렉터리 하위에 마이그레이션 파일들이 존재
 >
 > ---
 >
@@ -109,6 +109,16 @@ MVT(Model-View-Template)는 MVC와 약간 다르다.
 >
 > - 개발 과정에서 작성된 코드를 실행하고 테스트하는 테스트용 웹 서버이다.
 >
+
+<br/>
+
+### Advantages of Django
+
+- **Object-Relational Mapping (ORM) Support** − Django provides a bridge between the data model and the database engine, and supports a large set of database systems including MySQL, Oracle, Postgres, etc. Django also supports NoSQL database through Django-nonrel fork. For now, the only NoSQL databases supported are MongoDB and google app engine.
+- **Multilingual Support** − Django supports multilingual websites through its built-in internationalization system. So you can develop your website, which would support multiple languages.
+- **Framework Support** − Django has built-in support for Ajax, RSS, Caching and various other frameworks.
+- **Administration GUI** − Django provides a nice ready-to-use user interface for administrative activities.
+- **Development Environment** − Django comes with a lightweight web server to facilitate end-to-end application development and testing.
 
 <br/>
 
