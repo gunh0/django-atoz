@@ -1,5 +1,17 @@
 ## Start Project
 
+```bash
+python --version                         
+Python 3.5.6 :: Anaconda, Inc.
+
+# make python 3.5 env.
+conda create -n django35 python=3.5
+
+# check Django version
+pip list | grep Django                     
+Django     2.0
+```
+
 ```powershell
 > pip install virtualenv
 > virtualenv venv		// virtualenv 'name'
