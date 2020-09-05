@@ -1,1 +1,10 @@
-/Django_Web_Basic/venv
+.DS_Store
+
+venv/
+
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+db.sqlite3-journal
