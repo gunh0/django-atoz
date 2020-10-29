@@ -1,7 +1,7 @@
-from django.conf.urls import url
 from bookmark.views import BookmarkLV, BookmarkDV
+from django.urls import re_path
 
 urlpatterns = [
-    url(r'^$', BookmarkLV.as_view(), name='index'),
-    url(r'^(?P<pk>\d+)/$', BookmarkDV.as_view(), name='detail'),
+    re_path(r"^$", BookmarkLV.as_view(), name="index"),
+    re_path(r"^(?P<pk>\d+)/$", BookmarkDV.as_view(), name="detail"),
 ]

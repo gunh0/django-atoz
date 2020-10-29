@@ -6,11 +6,11 @@
 
 <br/>
 
-### MVC(Model-View-Controller)
+### MVC (Model-View-Controller)
 
 UI(웹 또는 데스크톱)를 제공하는 애플리케이션에 대해 이야기할 때는 대개 MVC 아키텍처에 대해 이야기한다.
 
-그리고 이름에서 알 수 있듯이 MVC 패턴은 Model-View-Controller 세 가지 요소를 기반으로 한다. 
+그리고 이름에서 알 수 있듯이 MVC 패턴은 Model-View-Controller 세 가지 요소를 기반으로 한다.
 
 <br/>
 
@@ -65,11 +65,11 @@ MVT(Model-View-Template)는 MVC와 약간 다르다.
 >
 > - 테이블의 신규 생성, 테이블의 정의 변경 등 models.py 파일에서 데이터베이스 변경 사항이 발생하면, 이를 데이터베이스에 실제로 반영해주는 작업을 해야 한다.
 >
->   > ###### Migrations (마이그레이션)
+> > ###### Migrations (마이그레이션)
 >   >
->   > - 테이블 및 필드의 생성, 삭제, 변경 등과 같이 데이터베이스에 대한 변경 사항을 알려주는 정보
+> > - 테이블 및 필드의 생성, 삭제, 변경 등과 같이 데이터베이스에 대한 변경 사항을 알려주는 정보
 >   >
->   > - 물리적으로는 애플리케이션 디렉터리별로 migrations/ 디렉터리 하위에 마이그레이션 파일들이 존재
+> > - 물리적으로는 애플리케이션 디렉터리별로 migrations/ 디렉터리 하위에 마이그레이션 파일들이 존재
 >
 > ---
 >
@@ -125,18 +125,39 @@ MVT(Model-View-Template)는 MVC와 약간 다르다.
 ### Basic Running Command / Reset Migrations
 
 ```shell
-> pip install virtualenv
-> virtualenv venv		// virtualenv 'name'
-> .\venv\Scripts\activate.ps1
-> deactivate			// virtualenv exit
-
-$ find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
-$ find . -path "*/migrations/*.pyc" -delete
-
-> python manage.py makemigrations
-> python manage.py migrate
-> python .\manage.py createsuperuser
-
-> python manage.py runserver	// 기본 8000
+# Windows
+pip install virtualenv
+virtualenv venv  // virtualenv 'name'
+.\venv\Scripts\activate.ps1
+deactivate   // virtualenv exit
 ```
 
+```shell
+# Using Anaconda
+conda create -n django_311 python=3.11.0
+activate venv
+
+# virtual env. deactivate
+deactivate
+
+# delete env.
+conda env remove -n venv
+```
+
+```shell
+find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+find . -path "*/migrations/*.pyc" -delete
+
+python manage.py makemigrations
+python manage.py migrate
+python .\manage.py createsuperuser
+
+# Username (leave blank to use ''): root
+# Email address: test@test.com
+# Password: 1234 
+# Password (again): 1234
+
+python manage.py runserver
+# Django version 4.1.7, using settings 'mysite.settings'
+# Starting development server at http://127.0.0.1:8000/
+```
