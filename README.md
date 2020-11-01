@@ -150,7 +150,7 @@ find . -path "*/migrations/*.pyc" -delete
 
 python manage.py makemigrations
 python manage.py migrate
-python .\manage.py createsuperuser
+python manage.py createsuperuser
 
 # Username (leave blank to use ''): root
 # Email address: test@test.com
