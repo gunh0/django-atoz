@@ -1,14 +1,14 @@
 ## Start Project
 
 ```bash
-python --version                         
+python --version
 Python 3.5.6 :: Anaconda, Inc.
 
 # make python 3.5 env.
 conda create -n django35 python=3.5
 
 # check Django version
-pip list | grep Django                     
+pip list | grep Django
 Django     2.0
 ```
 
@@ -39,13 +39,14 @@ myDjangoSite> python manage.py runserver
 
 <br/>
 
+### 0 Admin
+
+-   **http://localhost:8000/admin/**
+
 ### #1 Blog App
 
-- **http://localhost:8000/blog/**
-
-<br/>
+-   **http://localhost:8000/blog/**
 
 ### #2 Bookmark App
 
-- **http://localhost:8000/bookmark/**
-
+-   **http://localhost:8000/bookmark/**
