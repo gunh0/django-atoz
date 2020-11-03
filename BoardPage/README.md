@@ -15,5 +15,9 @@ $ source ./venv/bin/activate
 ### Command History
 
 ```
-$ django-admin startproject config .
+(venv) /BoardPage$ django-admin startproject config .
+(venv) /BoardPage$ python manage.py runserver
+
+# create board app
+(venv) /BoardPage$ 
 ```
