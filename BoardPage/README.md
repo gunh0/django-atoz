@@ -19,5 +19,5 @@ $ source ./venv/bin/activate
 (venv) /BoardPage$ python manage.py runserver
 
 # create board app
-(venv) /BoardPage$ 
+(venv) /BoardPage$ django-admin startapp board
 ```
