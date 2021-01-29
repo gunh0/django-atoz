@@ -26,7 +26,4 @@ urlpatterns = [
         r"^bookmark/", include(("bookmark.urls", "bookmark"), namespace="bookmark")
     ),
     re_path(r"^blog/", include(("blog.urls", "blog"), namespace="blog")),
-    # Class-based views for Bookmark app
-    # url(r'^bookmark/$', ListView.as_view(model=Bookmark),name='index'),
-    # url(r'^bookmark/(?P<pk>\d+)/$', DetailView.as_view(model=Bookmark), name='detail'),
 ]

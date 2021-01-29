@@ -39,7 +39,7 @@ myDjangoSite> python manage.py runserver
 
 <br/>
 
-### 0 Admin
+### #0 Admin
 
 -   **http://localhost:8000/admin/**
 
