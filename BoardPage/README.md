@@ -12,6 +12,8 @@ Python 3.10.9
 $ source ./venv/bin/activate
 ```
 
+<br/>
+
 ### Command History
 
 ```
@@ -21,3 +23,10 @@ $ source ./venv/bin/activate
 # create board app
 (venv) /BoardPage$ django-admin startapp board
 ```
+
+<br/>
+
+### URLs
+
+-   localhost:8000/admin
+-   localhost:8000/board
